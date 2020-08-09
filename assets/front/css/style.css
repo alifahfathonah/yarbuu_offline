@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a, p, article, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+}
+
+header .item {
+  height: 100vh;
+  position: relative;
+}
+
+header .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .item .cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+header .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+}
+header .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+header .item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+}
+header .item .cover .header-content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+header .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+}
+header .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+header .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+header .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-prev:focus {
+  outline: 0;
+}
+header .owl-nav .owl-prev:hover {
+  background: #000 !important;
+}
+header .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-next:focus {
+  outline: 0;
+}
+header .owl-nav .owl-next:hover {
+  background: #000 !important;
+}
+header:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+header:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+}
+
+#login-awal{
+  position: absolute;
+  bottom: 120px;
+  right: 40px;  
+  z-index: 1100;
+  background: rgba(30,144,255, 0.67);  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 300px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+
+#login-awal-content {
+  padding: 8px 20px;
+}
+
+#login-awal-title {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: center;
+  color: white !important;
+  font-weight: bold;
+}
+
+.form-awal {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-awal-form-border {
+  background: transparent !important;
+  height: 1px;
+  width: 100%;
+  margin: 3px 0;  
+}
+
+.form-awal label {
+  color: white !important;
+}
+
+.login-awal-form-content {
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  background: #349BFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#submit-btn {
+  background: -webkit-linear-gradient(right, DodgerBlue, #349BFF);
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  color: white;
+  height: 27px;
+  margin: 0 auto;
+  margin-top: 30px;
+  transition: 0.25s;
+  width: 153px;
+}
+
+#submit-btn:hover {
+  box-shadow: 0px 1px 18px #349BFF;
+}
+
+.pilih-mapel {  
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1100;
+}
+
+.select-home {  
+  width: 83%;
+  background: DodgerBlue;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pilihan-home {
+  padding: 5px 8px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.pilihan-home option {
+  background-color: transparent !important;
+  border: 1px solid #e4e4e4;
+  color: #000;
+  -webkit-appearance: none; 
+     -moz-appearance: none; 
+}
+
+.home-satu {
+  margin-top: -20px;
+  padding: 23px 0 18px 0;
+  background: #6BB6FF;
+  color: white;
+}
+
+.go-login {
+  margin-top: -20px;
+  padding: 23px 0 18px 0;
+  background: #000080;
+  color: white;
+}
+
+.login-desc {
+  background: white;
+  
+  text-align: center;
+  margin-bottom: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-title {
+  margin-top: 5px;
+  color: DodgerBlue;
+}
+
+.mapel {
+  padding: 20px 0;
+}
+
+.mapel-desc {
+  background: DodgerBlue;
+  text-align: center;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mapel-title {
+  margin-top: 20px;
+  color: white;
+}
+
+.i-depan, .fas {  
+  margin-top: 20px;
+  font-size: 80px;
+  color: #000080;
+}
+
+footer {
+  background: DodgerBlue;
+  padding: 20px 0 0 0;
+  color: #fff;
+  margin-top: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #000080;
+  text-decoration: none;
+}
